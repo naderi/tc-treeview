@@ -31,7 +31,7 @@ Große Dateien öffnen sich schnell, fehlerhafte Dateien zeigen trotzdem alles b
 
 ## Download und Installation
 
-1. **`TreeView.zip`** aus der [neuesten Version](https://github.com/naderi/treeview/releases/latest) herunterladen.
+1. **`TreeView.zip`** aus der [neuesten Version](https://github.com/naderi/tc-treeview/releases/latest) herunterladen.
 2. Die ZIP-Datei im Total Commander öffnen (Enter auf der Datei) und die Frage nach der Installation des Plugins bestätigen.
 
 Die Einstellungen liegen in `TreeView.ini` neben dem Plugin.

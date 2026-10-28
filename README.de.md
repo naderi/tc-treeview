@@ -22,7 +22,7 @@ Große Dateien öffnen sich schnell, fehlerhafte Dateien zeigen trotzdem alles b
 - ***Baum***: Namen und Werte nebeneinander, Typ-Kennzeichen (Text, Zahl, Bool, Null, Objekt, Array), auf Wunsch mit Anzahl der Unterknoten
 - ***Raster***: verschachtelte Tabellen; Arrays gleichartiger Objekte werden zu einer Tabelle mit einer Spalte pro Schlüssel; Spaltenbreiten lassen sich an den Inhalt anpassen
 - ***Quelltext***: formatiert und farbig; der ausgewählte Knoten bleibt beim Wechsel der Ansicht ausgewählt
-- **Werte direkt bearbeiten**: Doppelklick auf einen Wert, Strg+E oder F4 (Text, Zahlen, Booleans, XML-Attribute und Elementtext) – nur diese Stelle der Datei wird geändert, Kommentare und Formatierung bleiben erhalten (nicht bei `.reg`-Dateien)
+- **Werte direkt bearbeiten**: Doppelklick auf einen Wert, Strg+E oder F4 (Text, Zahlen, Booleans, XML-Attribute und Elementtext) – nur diese Stelle der Datei wird geändert, Kommentare und Formatierung bleiben erhalten (nicht bei `.reg`-Dateien). Geschrieben wird erst beim Speichern mit Strg+S; beim Schließen einer geänderten Datei wird nachgefragt
 - Wert, Name, Pfad (XPath bei XML, JSONPath bei JSON) oder einen ganzen Knoten als XML/JSON/YAML über das Kontextmenü kopieren
 - Pfad des ausgewählten Knotens in der Statusleiste, dazu Format, Kodierung und Anzahl der Knoten
 - Syntaxfehler werden mit Zeilennummer gemeldet; alles bis zum Fehler wird trotzdem angezeigt
@@ -45,6 +45,7 @@ Die Einstellungen liegen in `TreeView.ini` neben dem Plugin.
 | Strg+Plus / Strg+Minus | *Alle aufklappen* / *Alle zuklappen* |
 | * | *Unterknoten aufklappen* |
 | Strg+E / F4 / Doppelklick | *Wert bearbeiten* |
+| Strg+S | *Änderungen speichern* |
 | Strg+C | *Wert kopieren* |
 | Strg+Umschalt+C | *XPath kopieren* / *JSONPath kopieren* |
 | F7 | Suchen (Suche des Total Commander) |

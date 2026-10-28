@@ -22,6 +22,7 @@ Large files open quickly, broken files still show everything up to the error. Na
 - ***Tree***: names and values side by side, type badges (text, number, bool, null, object, array), optional count of child nodes
 - ***Grid***: nested tables; arrays of similar objects become one table with a column per key; column widths can be fitted to the content
 - ***Source***: pretty-printed, syntax-coloured source; the selected node stays selected when you switch views
+- **Edit values in place**: double-click a value, Ctrl+E or F4 (text, numbers, booleans, XML attributes and element text) – only that part of the file is rewritten, comments and formatting stay (not for `.reg` files)
 - Copy value, name, path (XPath for XML, JSONPath for JSON) or a whole node as XML/JSON/YAML from the context menu
 - Path of the selected node in the status bar, plus format, encoding and node count
 - Syntax errors are reported with line number; everything read up to the error is still shown
@@ -43,6 +44,7 @@ Settings are stored in `TreeView.ini` next to the plugin.
 | Ctrl+1 / Ctrl+2 / Ctrl+3 | *Tree* / *Grid* / *Source* |
 | Ctrl+plus / Ctrl+minus | *Expand all* / *Collapse all* |
 | * | *Expand subtree* |
+| Ctrl+E / F4 / double-click | *Edit value* |
 | Ctrl+C | *Copy value* |
 | Ctrl+Shift+C | Copy XPath / JSONPath |
 | F7 | Find (Total Commander's search) |

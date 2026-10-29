@@ -26,7 +26,7 @@ Große Dateien öffnen sich schnell, fehlerhafte Dateien zeigen trotzdem alles b
 - Wert, Name, Pfad (XPath bei XML, JSONPath bei JSON) oder einen ganzen Knoten als XML/JSON/YAML über das Kontextmenü kopieren
 - Pfad des ausgewählten Knotens in der Statusleiste, dazu Format, Kodierung und Anzahl der Knoten
 - Syntaxfehler werden mit Zeilennummer gemeldet; alles bis zum Fehler wird trotzdem angezeigt
-- Wählbare Schriftart; helles und dunkles Design (automatisch wie Windows oder fest) im Windows-11-Look
+- Wählbare Schriftart; helles und dunkles Design (automatisch wie Windows, wie Total Commander oder fest) im Windows-11-Look
 - Kodierungen: UTF-8, UTF-16 (mit oder ohne BOM), Windows-1252 und die Kodierungsangabe in XML
 - Oberfläche auf Deutsch und Englisch (richtet sich nach der Windows-Sprache)
 
@@ -51,7 +51,7 @@ Die Einstellungen liegen in `TreeView.ini` neben dem Plugin.
 | F7 | Suchen (Suche des Total Commander) |
 | F1 | Info |
 
-Weitere Optionen – *Design*, *Schriftart…*, *Spaltenbreiten zurücksetzen* – stehen im Kontextmenü (Rechtsklick).
+Weitere Optionen – *Design*, *Knöpfe*, *Schriftart…*, *Spaltenbreiten zurücksetzen* – stehen im Kontextmenü (Rechtsklick).
 
 ## Lizenz
 

@@ -26,7 +26,7 @@ Large files open quickly, broken files still show everything up to the error. Na
 - Copy value, name, path (XPath for XML, JSONPath for JSON) or a whole node as XML/JSON/YAML from the context menu
 - Path of the selected node in the status bar, plus format, encoding and node count
 - Syntax errors are reported with line number; everything read up to the error is still shown
-- Selectable font; light and dark design (automatic like Windows, or fixed) in the Windows 11 look
+- Selectable font; light and dark design (automatic like Windows, like Total Commander, or fixed) in the Windows 11 look
 - Text encodings: UTF-8, UTF-16 (with or without BOM), Windows-1252 and the XML encoding declaration
 - English and German user interface (follows the Windows language)
 
@@ -51,7 +51,7 @@ Settings are stored in `TreeView.ini` next to the plugin.
 | F7 | Find (Total Commander's search) |
 | F1 | About |
 
-More options – *Theme*, *Font…*, *Reset column widths* – are in the context menu (right click).
+More options – *Theme*, *Buttons*, *Font…*, *Reset column widths* – are in the context menu (right click).
 
 ## License
 

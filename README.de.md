@@ -23,6 +23,9 @@ Große Dateien öffnen sich schnell, fehlerhafte Dateien zeigen trotzdem alles b
 - ***Raster***: verschachtelte Tabellen; Arrays gleichartiger Objekte werden zu einer Tabelle mit einer Spalte pro Schlüssel; Spaltenbreiten lassen sich an den Inhalt anpassen
 - ***Quelltext***: formatiert und farbig; der ausgewählte Knoten bleibt beim Wechsel der Ansicht ausgewählt
 - **Werte direkt bearbeiten**: Doppelklick auf einen Wert, Strg+E oder F4 (Text, Zahlen, Booleans, XML-Attribute und Elementtext) – nur diese Stelle der Datei wird geändert, Kommentare und Formatierung bleiben erhalten (nicht bei `.reg`-Dateien). Geschrieben wird erst beim Speichern mit Strg+S; beim Schließen einer geänderten Datei wird nachgefragt
+- **Suchfeld** (optional, standardmäßig aus): *Suchfeld in der Leiste* im Kontextmenü oder `Search=1` in `TreeView.ini` (`Search=2` zeigt nur einen Such-Knopf, der das Feld öffnet). Eingabe = nächster Treffer, Umschalt+Eingabe = vorheriger, Esc = zurück zur Ansicht; alle Treffer werden markiert, der aktuelle hebt sich ab. Der Knopf `.*` sucht mit einem regulären Ausdruck. In der Quelltext-Ansicht werden die Treffer einzeln durchlaufen, auch mehrere in einer Zeile. Strg+Umschalt+F springt ins Feld (`SearchKey=F` macht Strg+F daraus, leer = kein Kurzbefehl)
+- **Farbschemata**: Ayu, GitHub, Solarized, One, Catppuccin, Gruvbox, Tokyo Night, Rosé Pine und Visual Studio, jeweils hell und dunkel (Kontextmenü > *Farbschema*, getrennt für helles und dunkles Design); *Standard* behält die ursprünglichen Farben. Es sind VS-Code-Farbschemata, eigene `*.json`-Dateien kannst du in den Ordner `Themes` neben dem Plugin legen
+- Strg+E / F4 auf einem Element oder Container ohne eigenen Wert bearbeitet den ersten Wert darin
 - Wert, Name, Pfad (XPath bei XML, JSONPath bei JSON) oder einen ganzen Knoten als XML/JSON/YAML über das Kontextmenü kopieren
 - Pfad des ausgewählten Knotens in der Statusleiste, dazu Format, Kodierung und Anzahl der Knoten
 - Syntaxfehler werden mit Zeilennummer gemeldet; alles bis zum Fehler wird trotzdem angezeigt
@@ -48,10 +51,11 @@ Die Einstellungen liegen in `TreeView.ini` neben dem Plugin.
 | Strg+S | *Änderungen speichern* |
 | Strg+C | *Wert kopieren* |
 | Strg+Umschalt+C | *XPath kopieren* / *JSONPath kopieren* |
+| Strg+Umschalt+F | Ins Suchfeld springen (wenn aktiviert) |
 | F7 | Suchen (Suche des Total Commander) |
 | F1 | Info |
 
-Weitere Optionen – *Design*, *Knöpfe*, *Schriftart…*, *Spaltenbreiten zurücksetzen* – stehen im Kontextmenü (Rechtsklick).
+Weitere Optionen – *Design*, *Farbschema*, *Knöpfe*, *Suchfeld in der Leiste*, *Schriftart…*, *Spaltenbreiten zurücksetzen* – stehen im Kontextmenü (Rechtsklick).
 
 ## Lizenz
 

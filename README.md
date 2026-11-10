@@ -23,6 +23,9 @@ Large files open quickly, broken files still show everything up to the error. Na
 - ***Grid***: nested tables; arrays of similar objects become one table with a column per key; column widths can be fitted to the content
 - ***Source***: pretty-printed, syntax-coloured source; the selected node stays selected when you switch views
 - **Edit values in place**: double-click a value, Ctrl+E or F4 (text, numbers, booleans, XML attributes and element text) – only that part of the file is rewritten, comments and formatting stay (not for `.reg` files). Changes are written only when you save with Ctrl+S; closing a modified file asks first
+- **Search field** (optional, off by default): *Search field in the toolbar* in the context menu, or `Search=1` in `TreeView.ini` (`Search=2` shows only a search button that opens the field). Enter = next match, Shift+Enter = previous, Esc = back to the view; all matches are highlighted and the current one stands out. The `.*` button searches with a regular expression. In the source view the matches are stepped through one by one, even several in a line. Ctrl+Shift+F jumps to the field (`SearchKey=F` makes it Ctrl+F, empty = no shortcut)
+- **Color schemes**: Ayu, GitHub, Solarized, One, Catppuccin, Gruvbox, Tokyo Night, Rosé Pine and Visual Studio, each light and dark (context menu > *Color scheme*, separately for light and dark design); *Default* keeps the original colors. They are VS Code color themes, so you can add your own `*.json` files to the `Themes` folder next to the plugin
+- Ctrl+E / F4 on an element or container without a value of its own edits the first value inside it
 - Copy value, name, path (XPath for XML, JSONPath for JSON) or a whole node as XML/JSON/YAML from the context menu
 - Path of the selected node in the status bar, plus format, encoding and node count
 - Syntax errors are reported with line number; everything read up to the error is still shown
@@ -48,10 +51,11 @@ Settings are stored in `TreeView.ini` next to the plugin.
 | Ctrl+S | *Save changes* |
 | Ctrl+C | *Copy value* |
 | Ctrl+Shift+C | Copy XPath / JSONPath |
+| Ctrl+Shift+F | Jump to the search field (if enabled) |
 | F7 | Find (Total Commander's search) |
 | F1 | About |
 
-More options – *Theme*, *Buttons*, *Font…*, *Reset column widths* – are in the context menu (right click).
+More options – *Theme*, *Color scheme*, *Buttons*, *Search field in the toolbar*, *Font…*, *Reset column widths* – are in the context menu (right click).
 
 ## License
 

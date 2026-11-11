@@ -26,6 +26,7 @@ Large files open quickly, broken files still show everything up to the error. Na
 - **Search field** (optional, off by default): *Search field in the toolbar* in the context menu, or `Search=1` in `TreeView.ini` (`Search=2` shows only a search button that opens the field). Enter = next match, Shift+Enter = previous, Esc = back to the view; all matches are highlighted and the current one stands out. The `.*` button searches with a regular expression. In the source view the matches are stepped through one by one, even several in a line. Ctrl+Shift+F jumps to the field (`SearchKey=F` makes it Ctrl+F, empty = no shortcut)
 - **Color schemes**: Ayu, GitHub, Solarized, One, Catppuccin, Gruvbox, Tokyo Night, Rosé Pine and Visual Studio, each light and dark (context menu > *Color scheme*, separately for light and dark design); *Default* keeps the original colors. They are VS Code color themes, so you can add your own `*.json` files to the `Themes` folder next to the plugin
 - Ctrl+E / F4 on an element or container without a value of its own edits the first value inside it
+- **Open everything expanded**: `Expanded=1` in `TreeView.ini` opens every file with *Expand all* switched on
 - Copy value, name, path (XPath for XML, JSONPath for JSON) or a whole node as XML/JSON/YAML from the context menu
 - Path of the selected node in the status bar, plus format, encoding and node count
 - Syntax errors are reported with line number; everything read up to the error is still shown

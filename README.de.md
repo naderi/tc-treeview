@@ -26,6 +26,7 @@ Große Dateien öffnen sich schnell, fehlerhafte Dateien zeigen trotzdem alles b
 - **Suchfeld** (optional, standardmäßig aus): *Suchfeld in der Leiste* im Kontextmenü oder `Search=1` in `TreeView.ini` (`Search=2` zeigt nur einen Such-Knopf, der das Feld öffnet). Eingabe = nächster Treffer, Umschalt+Eingabe = vorheriger, Esc = zurück zur Ansicht; alle Treffer werden markiert, der aktuelle hebt sich ab. Der Knopf `.*` sucht mit einem regulären Ausdruck. In der Quelltext-Ansicht werden die Treffer einzeln durchlaufen, auch mehrere in einer Zeile. Strg+Umschalt+F springt ins Feld (`SearchKey=F` macht Strg+F daraus, leer = kein Kurzbefehl)
 - **Farbschemata**: Ayu, GitHub, Solarized, One, Catppuccin, Gruvbox, Tokyo Night, Rosé Pine und Visual Studio, jeweils hell und dunkel (Kontextmenü > *Farbschema*, getrennt für helles und dunkles Design); *Standard* behält die ursprünglichen Farben. Es sind VS-Code-Farbschemata, eigene `*.json`-Dateien kannst du in den Ordner `Themes` neben dem Plugin legen
 - Strg+E / F4 auf einem Element oder Container ohne eigenen Wert bearbeitet den ersten Wert darin
+- **Alles aufgeklappt öffnen**: `Expanded=1` in `TreeView.ini` öffnet jede Datei mit eingeschaltetem *Alle aufklappen*
 - Wert, Name, Pfad (XPath bei XML, JSONPath bei JSON) oder einen ganzen Knoten als XML/JSON/YAML über das Kontextmenü kopieren
 - Pfad des ausgewählten Knotens in der Statusleiste, dazu Format, Kodierung und Anzahl der Knoten
 - Syntaxfehler werden mit Zeilennummer gemeldet; alles bis zum Fehler wird trotzdem angezeigt

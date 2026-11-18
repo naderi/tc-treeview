@@ -22,7 +22,10 @@ Große Dateien öffnen sich schnell, fehlerhafte Dateien zeigen trotzdem alles b
 - ***Baum***: Namen und Werte nebeneinander, Typ-Kennzeichen (Text, Zahl, Bool, Null, Objekt, Array), auf Wunsch mit Anzahl der Unterknoten
 - ***Raster***: verschachtelte Tabellen; Arrays gleichartiger Objekte werden zu einer Tabelle mit einer Spalte pro Schlüssel; Spaltenbreiten lassen sich an den Inhalt anpassen
 - ***Quelltext***: formatiert und farbig; der ausgewählte Knoten bleibt beim Wechsel der Ansicht ausgewählt
-- **Werte direkt bearbeiten**: Doppelklick auf einen Wert, Strg+E oder F4 (Text, Zahlen, Booleans, XML-Attribute und Elementtext) – nur diese Stelle der Datei wird geändert, Kommentare und Formatierung bleiben erhalten (nicht bei `.reg`-Dateien). Geschrieben wird erst beim Speichern mit Strg+S; beim Schließen einer geänderten Datei wird nachgefragt
+- **Text im Quelltext markieren und kopieren** wie in einem Text-Viewer: mit der Maus ziehen, Doppelklick markiert ein Wort, Umschalt+Klick erweitert, Strg+A markiert alles, Strg+C oder Strg+Einfg kopiert. Ohne Markierung kopiert Strg+C den Wert des ausgewählten Knotens
+- **Textcursor** im Quelltext (Kontextmenü > *Textcursor*, `Cursor=0` in `TreeView.ini`): Die Pfeiltasten bewegen ihn, Umschalt markiert, Strg+Pfeile springen wortweise, Pos1/Ende und Strg+Pos1/Ende wie in einem Editor. Nur die Cursor-Zeile wird hervorgehoben; die Statusleiste zeigt Zeile, Spalte und die Größe der Markierung (Zeichen und Zeilen)
+- **Zeilenumbruch** und **Formatiert anzeigen** als Icon-Knöpfe in der Leiste des Quelltexts (dieselben Icons wie in [Synta](https://digitalent.dev/de/projects/synta/)): *Zeilenumbruch* (Taste W, `Wrap=1` in `TreeView.ini`) bricht lange Zeilen an der Fensterbreite um; *Formatiert anzeigen* (Strg+Umschalt+B, `Formatted=0` in `TreeView.ini`) zeigt XML und JSON neu eingerückt oder genau so, wie sie in der Datei stehen, z. B. minifiziertes JSON
+- **Werte direkt bearbeiten**: Doppelklick auf einen Wert (im Quelltext markiert ein Doppelklick ein Wort), Strg+E oder F4 (Text, Zahlen, Booleans, XML-Attribute und Elementtext) – nur diese Stelle der Datei wird geändert, Kommentare und Formatierung bleiben erhalten (nicht bei `.reg`-Dateien). Geschrieben wird erst beim Speichern mit Strg+S; beim Schließen einer geänderten Datei wird nachgefragt
 - **Suchfeld** (optional, standardmäßig aus): *Suchfeld in der Leiste* im Kontextmenü oder `Search=1` in `TreeView.ini` (`Search=2` zeigt nur einen Such-Knopf, der das Feld öffnet). Eingabe = nächster Treffer, Umschalt+Eingabe = vorheriger, Esc = zurück zur Ansicht; alle Treffer werden markiert, der aktuelle hebt sich ab. Der Knopf `.*` sucht mit einem regulären Ausdruck. In der Quelltext-Ansicht werden die Treffer einzeln durchlaufen, auch mehrere in einer Zeile. Strg+Umschalt+F springt ins Feld (`SearchKey=F` macht Strg+F daraus, leer = kein Kurzbefehl)
 - **Farbschemata**: Ayu, GitHub, Solarized, One, Catppuccin, Gruvbox, Tokyo Night, Rosé Pine und Visual Studio, jeweils hell und dunkel (Kontextmenü > *Farbschema*, getrennt für helles und dunkles Design); *Standard* behält die ursprünglichen Farben. Es sind VS-Code-Farbschemata, eigene `*.json`-Dateien kannst du in den Ordner `Themes` neben dem Plugin legen
 - Strg+E / F4 auf einem Element oder Container ohne eigenen Wert bearbeitet den ersten Wert darin
@@ -49,8 +52,10 @@ Die Einstellungen liegen in `TreeView.ini` neben dem Plugin.
 | Strg+Plus / Strg+Minus | *Alle aufklappen* / *Alle zuklappen* |
 | * | *Unterknoten aufklappen* |
 | Strg+E / F4 / Doppelklick | *Wert bearbeiten* |
+| W / Strg+Umschalt+B | Quelltext: *Zeilenumbruch* / *Formatiert anzeigen* |
+| Strg+A | Quelltext: alles markieren |
 | Strg+S | *Änderungen speichern* |
-| Strg+C | *Wert kopieren* |
+| Strg+C | *Wert kopieren*, im Quelltext die markierte Stelle |
 | Strg+Umschalt+C | *XPath kopieren* / *JSONPath kopieren* |
 | Strg+Umschalt+F | Ins Suchfeld springen (wenn aktiviert) |
 | F7 | Suchen (Suche des Total Commander) |

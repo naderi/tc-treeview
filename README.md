@@ -29,7 +29,7 @@ Large files open quickly, broken files still show everything up to the error. Na
 - **Search field** (optional, off by default): *Search field in the toolbar* in the context menu, or `Search=1` in `TreeView.ini` (`Search=2` shows only a search button that opens the field). Enter = next match, Shift+Enter = previous, Esc = back to the view; all matches are highlighted and the current one stands out. The `.*` button searches with a regular expression. In the source view the matches are stepped through one by one, even several in a line. Ctrl+Shift+F jumps to the field (`SearchKey=F` makes it Ctrl+F, empty = no shortcut)
 - **Color schemes**: Ayu, GitHub, Solarized, One, Catppuccin, Gruvbox, Tokyo Night, Rosé Pine and Visual Studio, each light and dark (context menu > *Color scheme*, separately for light and dark design); *Default* keeps the original colors. They are VS Code color themes, so you can add your own `*.json` files to the `Themes` folder next to the plugin
 - Ctrl+E / F4 on an element or container without a value of its own edits the first value inside it
-- **Open everything expanded**: `Expanded=1` in `TreeView.ini` opens every file with *Expand all* switched on
+- **Expand all / Collapse all is remembered**: the last choice is stored as `Expanded=1` / `Expanded=0` in `TreeView.ini` and applied to every file you open
 - Copy value, name, path (XPath for XML, JSONPath for JSON) or a whole node as XML/JSON/YAML from the context menu
 - Path of the selected node in the status bar, plus format, encoding and node count
 - Syntax errors are reported with line number; everything read up to the error is still shown
@@ -49,8 +49,9 @@ Settings are stored in `TreeView.ini` next to the plugin.
 | Key | Action |
 |---|---|
 | Ctrl+1 / Ctrl+2 / Ctrl+3 | *Tree* / *Grid* / *Source* |
+| Ctrl+Tab / Ctrl+Shift+Tab | Next / previous view |
 | Ctrl+plus / Ctrl+minus | *Expand all* / *Collapse all* |
-| * | *Expand subtree* |
+| * | Expand the subtree, or collapse it when it is already fully open |
 | Ctrl+E / F4 / double-click | *Edit value* |
 | W / Ctrl+Shift+B | Source view: *Word wrap* / *Show formatted* |
 | Ctrl+A | Source view: select all |

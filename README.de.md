@@ -64,6 +64,14 @@ Die Einstellungen liegen in `TreeView.ini` neben dem Plugin.
 
 Weitere Optionen – *Design*, *Farbschema*, *Knöpfe*, *Suchfeld in der Leiste*, *Schriftart…*, *Spaltenbreiten zurücksetzen* – stehen im Kontextmenü (Rechtsklick).
 
+## Sprachen
+
+TreeView gibt es auf Englisch, Deutsch, Spanisch, Französisch, Russisch, Ukrainisch, Chinesisch (vereinfacht), Hindi, Portugiesisch und Persisch. Es folgt der Windows-Anzeigesprache; eine andere Sprache wählst du über das Rechtsklick-Menü (*Sprache der Oberfläche*) oder mit `Language=<Name oder Kürzel>` in der `TreeView.ini` (zum Beispiel `Persian` oder `fa`; `auto` folgt Windows).
+
+Die Texte stehen in einfachen `.lng`-Dateien im Ordner `Languages`. Für eine neue Sprache kopierst du `Languages\Template.lng`, übersetzt die rechten Seiten und speicherst sie unter einem neuen Namen – sie erscheint dann in der Sprachliste.
+
+Korrekturen und neue Übersetzungen von Muttersprachlern sind sehr willkommen – schick sie bitte als [Issue](https://github.com/naderi/tc-treeview/issues) in diesem Repository.
+
 ## Lizenz
 
 Freeware – kostenlos nutzbar, aber **nicht verkäuflich**. Siehe [LICENSE](LICENSE).

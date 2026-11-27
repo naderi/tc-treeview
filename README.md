@@ -6,7 +6,7 @@ An XML, JSON and YAML viewer (Lister plugin) for [Total Commander](https://www.g
 Press F3 on a data file and see it in three views: as a tree (like XML Notepad), as a nested grid (like XMLSpy) and as formatted, coloured source code.
 Large files open quickly, broken files still show everything up to the error. Native, no runtime, nothing to install besides the plugin.
 
-![TreeView showing a JSON file in the grid view](docs/screenshot.png)
+![TreeView showing a JSON file in the source view with the minimap](docs/screenshot.png)
 
 ## Supported files
 

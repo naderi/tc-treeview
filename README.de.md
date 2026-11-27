@@ -6,7 +6,7 @@ Ein XML-, JSON- und YAML-Betrachter (Lister-Plugin) für den [Total Commander](h
 F3 auf einer Datendatei zeigt sie in drei Ansichten: als Baum (wie XML Notepad), als verschachteltes Raster (wie XMLSpy) und als formatierten, farbigen Quelltext.
 Große Dateien öffnen sich schnell, fehlerhafte Dateien zeigen trotzdem alles bis zum Fehler. Nativ, keine Laufzeitumgebung, nichts zu installieren außer dem Plugin.
 
-![TreeView zeigt eine JSON-Datei in der Rasteransicht](docs/screenshot.de.png)
+![TreeView zeigt eine JSON-Datei in der Quelltext-Ansicht mit Minimap](docs/screenshot.de.png)
 
 ## Unterstützte Dateien
 
